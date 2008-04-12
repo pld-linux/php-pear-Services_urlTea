@@ -27,8 +27,8 @@ In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
 Pakiet ten udostępnia interfejs do tworzenia adresów URL urlTea
-wykorzystując ich API, jak również umożliwia odczytywanie adresu
-docelowego podanego adres urlTea.
+z wykorzystaniem ich API, jak również umożliwia odczytywanie adresu
+docelowego podanego adresu urlTea.
 
 Ta klasa ma w PEAR status: %{_status}.
 
