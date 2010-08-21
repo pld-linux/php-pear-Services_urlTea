@@ -1,13 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Services
-%define		_subclass	urlTea
 %define		_status		alpha
 %define		_pearname	Services_urlTea
 Summary:	%{_pearname} - PHP interface to urlTea's API
 Summary(pl.UTF-8):	%{_pearname} - interfejs PHP do API urlTea
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
-Release:	2
+Release:	3
 License:	New BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -15,6 +13,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Services_urlTea/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-curl
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,8 +25,8 @@ looking up destinations of given urlTea URL's.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
-Pakiet ten udostępnia interfejs do tworzenia adresów URL urlTea
-z wykorzystaniem ich API, jak również umożliwia odczytywanie adresu
+Pakiet ten udostępnia interfejs do tworzenia adresów URL urlTea z
+wykorzystaniem ich API, jak również umożliwia odczytywanie adresu
 docelowego podanego adresu urlTea.
 
 Ta klasa ma w PEAR status: %{_status}.
@@ -36,9 +35,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
