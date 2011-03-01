@@ -5,7 +5,7 @@ Summary:	%{_pearname} - PHP interface to urlTea's API
 Summary(pl.UTF-8):	%{_pearname} - interfejs PHP do API urlTea
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
-Release:	3
+Release:	4
 License:	New BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
