@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	Services_urlTea
 Summary:	%{_pearname} - PHP interface to urlTea's API
